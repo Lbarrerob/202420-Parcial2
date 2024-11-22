@@ -9,12 +9,12 @@ import { Trainer } from '../trainer/Trainer';
   providedIn: 'root'
 })
 export class TrainerService {
-  private apiUrl: string = environment.baseUrl + 'trainers.json';
+  private apiUrl: string = environment.baseUrl ;
 
   constructor(private http: HttpClient) {}
 
   getTrainers(): Observable<Trainer[]> {
-    return this.http.get<Trainer[]>(this.apiUrl)
+    return this.http.get<Trainer[]>(this.apiUrl+ 'trainers.json')
   }
 
   getTrainer(id: string): Observable<Trainer> {

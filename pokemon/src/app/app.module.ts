@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PokemonModule } from './pokemon/pokemon.module';
 import { TrainerModule } from './trainer/trainer.module';
 import { TrainerRoutingModule } from './trainer/trainer-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,9 +15,10 @@ import { TrainerRoutingModule } from './trainer/trainer-routing.module';
           AppRoutingModule, 
           PokemonModule, 
           TrainerModule,
-          TrainerRoutingModule
+          TrainerRoutingModule,
+          HttpClientModule
         ],
-        
+
   providers: [],
   bootstrap: [AppComponent],
 })

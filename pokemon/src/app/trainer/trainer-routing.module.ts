@@ -5,7 +5,7 @@ import { TrainerDetailComponent } from './trainer-detail/trainer-detail.componen
 
 const routes: Routes = [
     {
-     path: 'list',
+     path: '',
      component: TrainerListComponent
    },
    {

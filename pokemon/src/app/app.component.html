@@ -3,4 +3,17 @@
   alt="Pokemon Logo"
   class="logo"
 />
-<app-trainer-list></app-trainer-list>
+<div class="container-fluid" id="principal">
+  <div class="row">
+    <div class="col-md-12">
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="page-footer">
+  <div class="footer-copyright text-center py-2">
+    <a routerLink="/trainers/list" id="colorFooterText2"> trainers</a>
+  </div>
+</footer>

@@ -17,7 +17,7 @@ export class TrainerListComponent implements OnInit {
   constructor(private trainerService: TrainerService) {}
 
   getTraunersList(): void {
-    this.trainerService.getTrainers().subscribe({next: apiData => this.trainers = apiData });
+    this.trainerService.getTrainers().subscribe((apiData) => {this.trainers = apiData });
   }
 
   ngOnInit() {
